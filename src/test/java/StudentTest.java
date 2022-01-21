@@ -1,20 +1,15 @@
+import org.junit.Before;
 import org.junit.Test;
 
 public class StudentTest {
+ Student Wakoyi;
+ Student Emaka;
 
-    private Object String;
+ @Before
+    public void init(){
+     Wakoyi = new Student(1L, "Wakoyi");
+     Emaka = new Student(2L, "Emaka");
 
-    @Test
-    public void getId(){
-        this.getId("Long");
-    }
-
-    private void getId(String aLong) {
-
-    }
- @Test
-    public void name(Object string){
-     this.name(String);
  }
 
 

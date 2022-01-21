@@ -17,11 +17,19 @@ public class CohortTest {
 
         ntoi.addGrade(80);
         ntoi.addGrade(100);
+
+        wanneh.addGrade(100);
+        wanneh.addGrade(79);
+
+        one.addStudent(ntoi);
+        many.addStudent(ntoi);
+        many.addStudent(wanneh);
     }
 
     @Test
     public void addStudent(){
-    assertEquals(1,);
+    assertEquals(1, one.getStudents().size());
+    assertEquals(1, many.getStudents().size());
     }
 
 }

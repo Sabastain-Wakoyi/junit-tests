@@ -7,6 +7,6 @@ public class HellWorld {
       if(name == null){
           throw new IllegalArgumentException("People can't not hava a name....");
       }
-      return "Hello +name";
+      return "Hello + " + name + " ";
   }
 }

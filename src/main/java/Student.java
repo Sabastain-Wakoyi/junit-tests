@@ -24,7 +24,7 @@ public class Student {
         return this.grades;
     }
 
-    public void addGrade(int grade) {
+    public void addGrades(int grade) {
         this.grades.add(grade);
     }
 

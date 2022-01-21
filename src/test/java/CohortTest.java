@@ -38,4 +38,10 @@ public class CohortTest {
         assertEquals(5,many.getStudents().get(1).getId());
 
     }
+
+    @Test
+    public void cohortAverage(){
+        assertEquals(90, one.getCohortAverage(),1);
+        assertEquals(89.5, one.getCohortAverage(),1);
+    }
 }

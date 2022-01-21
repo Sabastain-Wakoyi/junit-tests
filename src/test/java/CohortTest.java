@@ -29,7 +29,13 @@ public class CohortTest {
     @Test
     public void addStudent(){
     assertEquals(1, one.getStudents().size());
-    assertEquals(1, many.getStudents().size());
+    assertEquals(2, many.getStudents().size());
     }
 
+    @Test
+    public void getStudent(){
+        assertEquals(15,many.getStudents().get(0).getId());
+        assertEquals(5,many.getStudents().get(1).getId());
+
+    }
 }

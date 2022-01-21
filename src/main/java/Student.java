@@ -18,4 +18,8 @@ public class Student {
 
     public void addGrades(int i) {
     }
+
+    public double getAverage() {
+
+    }
 }

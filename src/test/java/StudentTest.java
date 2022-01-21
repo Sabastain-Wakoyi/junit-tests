@@ -38,4 +38,17 @@ public class StudentTest {
      Wakoyi.addGrades(100);
      assertEquals(100, Wakoyi.getGrades().get(1),0);
     }
+
+    @Test
+    public void AvgWorks(){
+     assertEquals(0, Wakoyi.getAverage(),0);
+     Wakoyi.addGrades(100);
+     Wakoyi.addGrades(70);
+     Wakoyi.addGrades(80);
+     //250/3=83.3
+        assertEquals(83.3, Wakoyi.getAverage(),0.1);
+        Wakoyi.addGrades(70);
+        //85
+        assertEquals(85,Wakoyi.getAverage(),0);
+    }
 }

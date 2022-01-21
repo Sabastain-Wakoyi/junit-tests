@@ -1,11 +1,12 @@
+import java.util.Locale;
+
 public class CodeupCrypt {
-    public static double version = 0.0;
+    public static double version = 0;
 
-
-    public static String hashPassword(String password){
+    public static String hashPassword(String password) {
         String hash = "";
-        for (char character: password.toCharArray()){
-            switch (character){
+        for(char character : password.toCharArray()) {
+            switch (character) {
                 case 'a':
                 case 'A':
                     hash += 4;
@@ -21,18 +22,20 @@ public class CodeupCrypt {
                 case 'o':
                 case 'O':
                     hash += 0;
+                    break;
                 case 'u':
                 case 'U':
                     hash += 9;
                     break;
-
+                default:
+                    hash += character;
+                    break;
             }
         }
-
         return hash;
     }
 
-    public static boolean checkPassword(String password, String hash){
+    public static boolean checkPassword(String password, String hash) {
         return hash.equals(hashPassword(password));
     }
 }

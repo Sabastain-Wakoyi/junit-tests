@@ -48,7 +48,7 @@ public class StudentTest {
      //250/3=83.3
         assertEquals(83.3, Wakoyi.getAverage(),0.1);
         Wakoyi.addGrades(70);
-        //80
-        assertEquals(80,Wakoyi.getAverage(),0);
+        //85
+        assertEquals(85,Wakoyi.getAverage(),0);
     }
 }

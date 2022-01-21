@@ -1,3 +1,5 @@
+import java.util.Collection;
+
 public class Student {
     public Student(long l, String wakoyi) {
 
@@ -9,5 +11,11 @@ public class Student {
 
     public Object getName() {
 
+    }
+
+    public Collection<Object> getGrades() {
+    }
+
+    public void addGrades(int i) {
     }
 }

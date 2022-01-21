@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class StudentTest {
  Student Wakoyi;
@@ -25,4 +26,16 @@ public class StudentTest {
      assertNotEquals("Wakoyi",Emaka.getName());
     }
 
+    @Test
+    public void gradesWorks(){
+     assertEquals(0, Wakoyi.getGrades().size());
+    }
+
+    @Test
+    public void addGradesWorks(){
+     Wakoyi.addGrades(90);
+     assertTrue(90 == Wakoyi.getGrades().get(0));
+     Wakoyi.addGrades(100);
+     assertEquals(100, Wakoyi.getGrades().get(1),0);
+    }
 }
